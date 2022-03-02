@@ -1,6 +1,6 @@
 ﻿namespace Ordering.Application.Features.Orders.Queries.GetOrdersList
 {
-    internal class OrdersVm
+    public class OrdersVm
     {
         public int Id { get; set; }
         public string UserName { get; set; }

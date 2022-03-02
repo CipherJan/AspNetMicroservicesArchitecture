@@ -2,7 +2,7 @@
 
 namespace Ordering.Application.Features.Orders.Commands.CheckoutOrder
 {
-    internal class CheckoutOrderCommand : IRequest<int>
+    public class CheckoutOrderCommand : IRequest<int>
     {
         public string UserName { get; set; }
         public decimal TotalPrice { get; set; }

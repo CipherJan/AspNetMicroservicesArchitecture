@@ -1,6 +1,6 @@
 ﻿namespace Ordering.Application.Models
 {
-    internal class EmailSettings
+    public class EmailSettings
     {
         public string ApiKey { get; set; }
         public string FromAddress { get; set; }
