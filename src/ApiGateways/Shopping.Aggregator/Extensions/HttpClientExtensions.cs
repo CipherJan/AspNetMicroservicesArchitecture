@@ -7,12 +7,12 @@ namespace Shopping.Aggregator.Extensions
 {
     public static class HttpClientExtensions
     {
-        public static async Task<T> ReadContentAs<T>(this HttpResponseMessage responce)
+        public static async Task<T> ReadContentAs<T>(this HttpResponseMessage response)
         {
-            if (!responce.IsSuccessStatusCode)
-                throw new ApplicationException($"Something went wrong calling the API: {responce.ReasonPhrase}");
+            if (!response.IsSuccessStatusCode)
+                throw new ApplicationException($"Something went wrong calling the API: {response.ReasonPhrase}");
 
-            var dataAsString = await responce.Content.ReadAsStringAsync().ConfigureAwait(false);
+            var dataAsString = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
             return JsonSerializer.Deserialize<T>(dataAsString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
         }

@@ -35,7 +35,7 @@ namespace Shopping.Aggregator.Controllers
 
             var basket = await _basketService.GetBasket(userName);
 
-            foreach(var item in basket.Item)
+            foreach(var item in basket.Items)
             {
                 var product = await _catalogService.GetCatalog(item.ProductId);
 
