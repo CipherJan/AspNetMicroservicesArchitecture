@@ -22,13 +22,13 @@ namespace AspnetRunBasics
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpClient<ICatalogService, CatalogService>(c =>
-                c.BaseAddress = new Uri(Configuration["ApiSettings:GetewayAddress"]));
+                c.BaseAddress = new Uri(Configuration["ApiSettings:GatewayAddress"]));
 
             services.AddHttpClient<IBasketService, BasketService>(c =>
-                c.BaseAddress = new Uri(Configuration["ApiSettings:GetewayAddress"]));
+                c.BaseAddress = new Uri(Configuration["ApiSettings:GatewayAddress"]));
 
             services.AddHttpClient<IOrderService, OrderService>(c =>
-                c.BaseAddress = new Uri(Configuration["ApiSettings:GetewayAddress"]));
+                c.BaseAddress = new Uri(Configuration["ApiSettings:GatewayAddress"]));
 
             services.AddRazorPages();
         }
