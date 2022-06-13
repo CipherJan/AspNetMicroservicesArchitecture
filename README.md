@@ -1,5 +1,5 @@
-# Phone Shop 
-There is a couple of microservices  Catalog, Basket, Discount and Ordering microservices with NoSQL (MongoDB, Redis) and Relational databases (PostgreSQL, Sql Server) with communicatin over gRPC and RabbitMQ and using Ocelot API Gateway.
+# Microservice architecture 
+This repository contains a couple of microservices such as:  Catalog, Basket, Discount and Ordering microservices with NoSQL (MongoDB, Redis) and Relational databases (PostgreSQL, Sql Server) with communicatin over gRPC and RabbitMQ and using Ocelot API Gateway.
 
 
 ## Whats include
